@@ -141,7 +141,7 @@ def poisci_podatke5(bloki):
 
     for blok in bloki:
         slovar = {}
-        vzorec_je_ni_trgovec = re.compile(r'<span class="icon-item feature feature--User".+>(?P<je_ni_trgovec>.+)</span>')
+        vzorec_je_ni_trgovec = re.compile(r'<span class="icon-item feature feature--User" title="Uporabnik ni trgovec"><span class="icon icon--action icon--s icon--user">(?P<je_ni_trgovec>.+)</span></span>')
 
         najdba = vzorec_je_ni_trgovec.search(blok)
         
