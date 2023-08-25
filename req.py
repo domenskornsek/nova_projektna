@@ -1,6 +1,6 @@
 import requests
 
-for i in range(8):
+for i in range(7):
     stran = requests.get(
         f"https://www.bolha.com/bazeni-in-oprema?page={i}"
     )
